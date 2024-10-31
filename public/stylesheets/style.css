@@ -1,0 +1,247 @@
+/* General Styles */
+
+body {  /* Apply lucida sans font to all pages. Keep website to edges and background is white. */
+  font-family: monospace, 'Lucida Sans';
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header { /* Apply to header of all pages. Coloured background and content should have bolded font. */
+  background-color: #404950;
+  font-weight: bold;
+  color: white;
+  padding: 10px 0;
+}
+
+.navList { /* Apply to all navlists across pages (for header). Display in the center of the header as white text size 20px. */
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 50px 0;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+}
+
+.navlist li { /* Within the header have the fonts be seperated from each other by a margin of 15px. */
+  margin: 0 15px;
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.navlist a { /* For active and already visited tabs ensure font color stays white and no decoartions. */
+  color: white;
+  text-decoration: none;
+}
+
+.navlist a:hover,
+.navlist a.active { /* If tab is active display an underline, overriding the no text decoration. */
+  text-decoration: underline;
+  color: white;
+}
+
+main { /* Padding and height of pages. */
+  padding: 20px;
+  min-height: 70vh;
+}
+
+footer { /* Footer for all pages. Display white bolded text that is in the center of the footer. Keep footer at bottom of page. */
+  background-color: #404950;
+  color: white;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.row { /* Row for diplaying content side by side. */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 600px; 
+  width: 700px;
+  gap: 20px; 
+  padding: 50px 0; 
+}
+
+.column { /* Column for diplaying content side by side. */
+  flex: 1; 
+  max-width: 800px; 
+  padding: 10px;
+  box-sizing: content-box; 
+}
+
+/* Home Page */
+
+#gradiant1 { /* Angled linear gradient to be displayed behind home page text. */
+  background-image: linear-gradient(to bottom right, #408FCF , #404950);
+  height: 360px;
+}
+
+.homeinfo { /* Design choice for home page display text. Text formatting and display box to hold text in. */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  max-width: 600px;  
+  background-color: #408FCF;
+  margin: 10px auto;
+  padding: 90px;
+  border-radius: 50px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* About Me Page */
+
+.profilep { /* Diplays picture in a circle with a border. */
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #4E677A;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.aboutme { /* Formatting for aboutme class. Keeps objects centered. */
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.aboutme p { /* Formatting for paragraph aboutme class. */
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  border: solid;
+  border-width: 4px;
+  border-color: #4E677A;
+  background-color: white;
+  margin: 10px auto;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.aboutme video { /* Formatting for video. Displays border. */
+  width: 100%;
+  height: auto;
+  display: block;
+  border: #4E677A;
+  border-style: solid;
+  border-width: 4px;
+}
+
+button { /* Formatting for button. Background colour and text. */
+  width: 100px;
+  height: 60px;
+  background-color: #408FCF;
+  border: #4E677A;
+  border-style: solid;
+  border-width: 5px;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Projects Page */
+
+.projects h2 { /* For class projects h2 keep them in the middle with a 20px margin. */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.projects ul { /* For unorganized lists in projects have no style and no padding. */
+  list-style: none;
+  padding: 0;
+}
+
+.projects li { /* For lists in projects display white box behind with dropshadow. */
+  background-color: white;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 700px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#gradiant2 { /* Gradiant to show behind the images. */
+  background-image: linear-gradient(#408FCF, #4E7EA5, #2A2F33);
+  display: flex;
+  justify-content: center;
+  width: 680px;
+  align-items: center;
+  margin: 1px auto;
+  padding: 10px;
+}
+
+.column2 { /* Diplay content side by side for projects page. */
+  flex: 1; 
+  max-width: 500px; 
+  padding: 20px;
+  box-sizing: border-box; 
+}
+
+.row2 { /* Diplay content side by side for projects page. */
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 200px; 
+  gap: 30px; 
+  padding: 50px 0; 
+}
+
+/* Contact Page */
+
+.contactform { /* In the form put white box with dropshadow. */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.contactform h2 { /* For headers in form align to middle with 20px margin. */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contactform label { /* For labels in form display by block and bold font. */
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contactform input,
+.contactform textarea { /* For the input and text area have slight border radius and space them from each other. */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) { /*  */
+  .nav-links {
+      flex-direction: column;
+  }
+
+  .nav-links li {
+      margin: 10px 0;
+  }
+  @media (min-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
+  @media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+  @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */ }
+}
