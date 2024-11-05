@@ -13,38 +13,36 @@
 
     <%- include('partials/header') %> <!--Includes header from partials folder -->
 
-    <main class="container my-5">
-        <article class="aboutme text-center">
-            <!-- Profile Image Section -->
-            <div class="row mb-4">
-                <div class="col-md-4 mx-auto">
-                    <img src="images/Profile.png" alt="Photo of Casey Panganiban" class="img-fluid rounded-circle profilep">
+    <main>
+        <article class="aboutme">
+            <img src="images/Profile.png" alt="Photo of Casey Panganiban" class="profilep">
+            <div class= "row2">
+                <div class = "column2">
+                    <p><b>About Me:</b><br>Hello, my name is Casey Panganiban, a 3rd Year Ontario Tech University student currently enrolled in Technology Management. 
+                        I enjoy drawing, travelling, rock climbing, golf, and playing videogames.</p>
                 </div>
-            </div>
-
-            <!-- About Me Section -->
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <p><strong>About Me:</strong><br>
-                        Hello, my name is Casey Panganiban, a 3rd Year Ontario Tech University student currently enrolled in Technology Management. 
-                        I enjoy drawing, travelling, rock climbing, golf, and playing video games.
-                    </p>
-                </div>
-
-                <!-- Video Section -->
-                <div class="col-md-6">
-                    <video id="myvid" controls poster="/images/videop.png" preload="auto" class="img-fluid rounded">
+                <div class = "column2">
+                    <video id="myvid" controls poster="public/images/videop.png" preload ="auto" width="600">
                         <source src="videos/video.mp4" type="video/mp4">
                         <source src="videos/video.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
                 </div>
             </div>
-
-            <!-- Play/Pause Button -->
-            <div class="d-flex justify-content-center">
-                <button onclick="playPause()" class="btn btn-primary">Play/Pause</button>
+            <div>
+                <br>
+                    <button onclick="playPause()">Play/Pause</button>
+                <br>
             </div>
+            <script> 
+                var vid = document.getElementById("myvid"); 
+                function playPause() { 
+                    if (vid.paused) 
+                        vid.play(); 
+                    else 
+                        vid.pause(); 
+                } 
+                </script> 
         </article>
     </main>
 
